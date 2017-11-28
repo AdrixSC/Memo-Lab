@@ -20,16 +20,28 @@ main {
   overflow: hidden;
 }
 
+.efects { /*se agregan estas propiedades para lograr efecto de voletar cartas*/
+  transform-style: preserve-3d;
+  transition: 2s;
+}
+
 .card {
   float: left;
   height: 200px;
   margin: 4% 5%;
   width: 20%;
+  /*transform-style: preserve-3d;
+  transition: 2s;*/ se pasan estas propiedades a una nueva clase (efects) para incorporarlas dinamicamente en js
+}
+
+.rotation-efect {
+  transform: rotateY(180deg);
 }
 
 .card-1:hover {
   background-image: url("../assets/images/cabin.png");
   background-size: cover;
+  /*transform: rotateY(180deg);*/ se saca esta propiedad para pasarla a una nueva clase (rotation-efect) y utilizarla dinamicamente en js
 }
 
 .card-2:hover {
