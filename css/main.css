@@ -38,29 +38,29 @@ main {
   transform: rotateY(180deg);
 }
 
-.card-1:hover {
+.card-1[select=true] {
   background-image: url("../assets/images/cabin.png");
   background-size: cover;
   /*transform: rotateY(180deg);*/ se saca esta propiedad para pasarla a una nueva clase (rotation-efect) y utilizarla dinamicamente en js
 }
 
-.card-2:hover {
+.card-2[select=true] {
   background-image: url("../assets/images/cake.png");
   background-size: cover;
   background-position: center;
 }
 
-.card-3:hover {
+.card-3[select=true] {
   background-image: url("../assets/images/circus.png");
   background-size: cover;
 }
 
-.card-4:hover {
+.card-4[select=true] {
   background-image: url("../assets/images/game.png");
   background-size: cover;
 }
 
-.card-comodin:hover {
+.card-comodin[select=true] {
   background-image: url("../assets/images/submarine.png");
   background-size: cover;
 }
